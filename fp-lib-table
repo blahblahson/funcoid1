@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name Connectors_DSub)(type KiCad)(uri /home/alvin/lib/kicad/footprints/library-repos/Connectors_DSub.pretty)(options "")(descr ""))
+  (lib (name Connectors_IDC)(type KiCad)(uri /home/alvin/lib/kicad/footprints/library-repos/Connectors_IDC.pretty)(options "")(descr ""))
+  (lib (name custom)(type KiCad)(uri "$(KIPRJMOD)/custom.pretty")(options "")(descr ""))
+)
