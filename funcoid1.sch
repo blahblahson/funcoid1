@@ -1,16 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:6hc-rescue
-LIBS:device
-LIBS:power
-LIBS:memory
-LIBS:Switch
-LIBS:Logic_74xx
-LIBS:Oscillators
-LIBS:65xx
-LIBS:Connector
-LIBS:regul
-LIBS:6hc-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+LIBS:funcoid1-cache
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -25,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L VCC #PWR01
+L funcoid1-rescue:VCC #PWR01
 U 1 1 5AAEE312
 P 1000 2150
 F 0 "#PWR01" H 1000 2000 50  0001 C CNN
@@ -36,7 +26,7 @@ F 3 "" H 1000 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L funcoid1-rescue:GND #PWR02
 U 1 1 5AAEE358
 P 1000 2750
 F 0 "#PWR02" H 1000 2500 50  0001 C CNN
@@ -49,7 +39,7 @@ $EndComp
 Text GLabel 1300 2450 2    60   Output ~ 0
 CLK
 $Comp
-L ACO-xxxMHz X1
+L funcoid1-rescue:ACO-xxxMHz X1
 U 1 1 5AAEE2B8
 P 1000 2450
 F 0 "X1" H 800 2700 50  0000 L CNN
@@ -60,7 +50,7 @@ F 3 "" H 900 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR03
+L funcoid1-rescue:VCC #PWR03
 U 1 1 5AAEE874
 P 1450 3500
 F 0 "#PWR03" H 1450 3350 50  0001 C CNN
@@ -71,7 +61,7 @@ F 3 "" H 1450 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L funcoid1-rescue:R R3
 U 1 1 5AAEEA50
 P 1700 4000
 F 0 "R3" V 1780 4000 50  0000 C CNN
@@ -82,7 +72,7 @@ F 3 "" H 1700 4000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CP1_Small C1
+L funcoid1-rescue:CP1_Small C1
 U 1 1 5AAEEAE6
 P 1450 3800
 F 0 "C1" H 1460 3870 50  0000 L CNN
@@ -93,7 +83,7 @@ F 3 "" H 1450 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
+L funcoid1-rescue:R R2
 U 1 1 5AAEEBCE
 P 1200 4000
 F 0 "R2" V 1280 4000 50  0000 C CNN
@@ -104,7 +94,7 @@ F 3 "" H 1200 4000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R1
+L funcoid1-rescue:R R1
 U 1 1 5AAEEC0A
 P 950 4250
 F 0 "R1" V 1030 4250 50  0000 C CNN
@@ -115,7 +105,7 @@ F 3 "" H 950 4250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR04
+L funcoid1-rescue:GND #PWR04
 U 1 1 5AAEECCA
 P 950 4400
 F 0 "#PWR04" H 950 4150 50  0001 C CNN
@@ -126,7 +116,7 @@ F 3 "" H 950 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L funcoid1-rescue:GND #PWR05
 U 1 1 5AAEECE7
 P 1450 4400
 F 0 "#PWR05" H 1450 4150 50  0001 C CNN
@@ -137,7 +127,7 @@ F 3 "" H 1450 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D D1
+L funcoid1-rescue:D D1
 U 1 1 5AAEED70
 P 1450 4250
 F 0 "D1" H 1450 4350 50  0000 C CNN
@@ -148,7 +138,7 @@ F 3 "" H 1450 4250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L SW_Push SW1
+L funcoid1-rescue:SW_Push SW1
 U 1 1 5AAEF022
 P 950 3700
 F 0 "SW1" H 1000 3800 50  0000 L CNN
@@ -159,7 +149,7 @@ F 3 "" H 950 3900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L VCC #PWR06
+L funcoid1-rescue:VCC #PWR06
 U 1 1 5AAEF3A2
 P 950 3500
 F 0 "#PWR06" H 950 3350 50  0001 C CNN
@@ -170,7 +160,7 @@ F 3 "" H 950 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR07
+L funcoid1-rescue:VCC #PWR07
 U 1 1 5AAEF477
 P 1850 3500
 F 0 "#PWR07" H 1850 3350 50  0001 C CNN
@@ -183,7 +173,7 @@ $EndComp
 Text GLabel 2450 3900 2    60   Output ~ 0
 RESET
 $Comp
-L 74LS132 U1
+L funcoid1-rescue:74LS132 U1
 U 1 1 5AAEF5AC
 P 2150 3900
 F 0 "U1" H 2150 4100 50  0000 C CNN
@@ -194,7 +184,7 @@ F 3 "" H 2150 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L WD65C02 U3
+L funcoid1-rescue:WD65C02 U3
 U 1 1 5AAEF9F3
 P 5450 2350
 F 0 "U3" H 5450 3450 60  0000 C CNN
@@ -208,7 +198,7 @@ Text GLabel 6300 1450 2    60   Input ~ 0
 RESET
 NoConn ~ 6100 1550
 $Comp
-L R R6
+L funcoid1-rescue:R R6
 U 1 1 5AAF00AB
 P 4450 1300
 F 0 "R6" V 4530 1300 50  0000 C CNN
@@ -221,7 +211,7 @@ $EndComp
 NoConn ~ 4800 1650
 NoConn ~ 6100 1950
 $Comp
-L VCC #PWR08
+L funcoid1-rescue:VCC #PWR08
 U 1 1 5AAF0457
 P 6900 1600
 F 0 "#PWR08" H 6900 1450 50  0001 C CNN
@@ -268,7 +258,7 @@ Entry Wire Line
 Entry Wire Line
 	6250 3250 6350 3350
 $Comp
-L GND #PWR09
+L funcoid1-rescue:GND #PWR09
 U 1 1 5AAF18B3
 P 6100 3350
 F 0 "#PWR09" H 6100 3100 50  0001 C CNN
@@ -353,7 +343,7 @@ Entry Bus Bus
 Text Label 4800 3650 0    60   ~ 0
 A[0..15]
 $Comp
-L 28C256 U5
+L funcoid1-rescue:28C256 U5
 U 1 1 5AAF5002
 P 8350 2400
 F 0 "U5" H 8350 3450 60  0000 C CNN
@@ -428,7 +418,7 @@ Entry Bus Bus
 Text Label 7550 1300 0    60   ~ 0
 A[0..15]
 $Comp
-L VCC #PWR010
+L funcoid1-rescue:VCC #PWR010
 U 1 1 5AAF67E9
 P 7650 3100
 F 0 "#PWR010" H 7650 2950 50  0001 C CNN
@@ -441,7 +431,7 @@ $EndComp
 Text GLabel 7450 3300 0    60   Input ~ 0
 ROM_SEL
 $Comp
-L 74LS132 U1
+L funcoid1-rescue:74LS132 U1
 U 2 1 5AAF6CA2
 P 1750 5100
 F 0 "U1" H 1750 5300 50  0000 C CNN
@@ -454,7 +444,7 @@ $EndComp
 Text Label 1300 5500 0    60   ~ 0
 A14
 $Comp
-L 74LS132 U1
+L funcoid1-rescue:74LS132 U1
 U 3 1 5AAF7379
 P 1750 5600
 F 0 "U1" H 1750 5800 50  0000 C CNN
@@ -465,7 +455,7 @@ F 3 "" H 1750 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74LS132 U1
+L funcoid1-rescue:74LS132 U1
 U 4 1 5AAF7455
 P 1750 6100
 F 0 "U1" H 1750 6300 50  0000 C CNN
@@ -488,7 +478,7 @@ ROM_SEL
 Text GLabel 2050 6100 2    60   Output ~ 0
 RAM_SEL
 $Comp
-L HM62256BLP-7 U2
+L funcoid1-rescue:HM62256BLP-7 U2
 U 1 1 5AAF8297
 P 4250 5200
 F 0 "U2" H 4250 6150 60  0000 C CNN
@@ -641,7 +631,7 @@ R/~W
 Text GLabel 4750 5550 2    60   Input ~ 0
 RAM_SEL
 $Comp
-L W65C51N U4
+L funcoid1-rescue:W65C51N U4
 U 1 1 5AAFF2D4
 P 7600 4900
 F 0 "U4" H 7600 5700 60  0000 C CNN
@@ -696,7 +686,7 @@ Entry Bus Bus
 Text Label 6600 4400 0    60   ~ 0
 A13
 $Comp
-L GND #PWR011
+L funcoid1-rescue:GND #PWR011
 U 1 1 5AB03648
 P 6950 4300
 F 0 "#PWR011" H 6950 4050 50  0001 C CNN
@@ -707,7 +697,7 @@ F 3 "" H 6950 4300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L VCC #PWR012
+L funcoid1-rescue:VCC #PWR012
 U 1 1 5AB036B8
 P 8250 5600
 F 0 "#PWR012" H 8250 5450 50  0001 C CNN
@@ -721,7 +711,7 @@ Text GLabel 6950 4600 0    60   Input ~ 0
 RESET
 NoConn ~ 6950 4700
 $Comp
-L Crystal_Small Y1
+L funcoid1-rescue:Crystal_Small Y1
 U 1 1 5AB03B2F
 P 6400 4800
 F 0 "Y1" H 6300 4850 50  0000 C CNN
@@ -732,7 +722,7 @@ F 3 "" H 6400 4800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C_Small C8
+L funcoid1-rescue:C_Small C8
 U 1 1 5AB03EED
 P 6050 4800
 F 0 "C8" V 6100 4850 50  0000 L CNN
@@ -743,7 +733,7 @@ F 3 "" H 6050 4800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR013
+L funcoid1-rescue:GND #PWR013
 U 1 1 5AB03F54
 P 5950 4800
 F 0 "#PWR013" H 5950 4550 50  0001 C CNN
@@ -766,7 +756,7 @@ A[0..15]
 Entry Bus Bus
 	6400 5900 6500 5800
 $Comp
-L GND #PWR014
+L funcoid1-rescue:GND #PWR014
 U 1 1 5AAFEA1F
 P 800 7450
 F 0 "#PWR014" H 800 7200 50  0001 C CNN
@@ -777,7 +767,7 @@ F 3 "" H 800 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C2
+L funcoid1-rescue:C_Small C2
 U 1 1 5AAFEA69
 P 800 7350
 F 0 "C2" H 810 7420 50  0000 L CNN
@@ -788,7 +778,7 @@ F 3 "" H 800 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR015
+L funcoid1-rescue:VCC #PWR015
 U 1 1 5AAFEB67
 P 800 7250
 F 0 "#PWR015" H 800 7100 50  0001 C CNN
@@ -801,7 +791,7 @@ $EndComp
 Text Notes 700  7450 1    60   ~ 0
 At X1
 $Comp
-L GND #PWR016
+L funcoid1-rescue:GND #PWR016
 U 1 1 5AAFEDD3
 P 1250 7450
 F 0 "#PWR016" H 1250 7200 50  0001 C CNN
@@ -812,7 +802,7 @@ F 3 "" H 1250 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C3
+L funcoid1-rescue:C_Small C3
 U 1 1 5AAFEDD9
 P 1250 7350
 F 0 "C3" H 1260 7420 50  0000 L CNN
@@ -823,7 +813,7 @@ F 3 "" H 1250 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR017
+L funcoid1-rescue:VCC #PWR017
 U 1 1 5AAFEDDF
 P 1250 7250
 F 0 "#PWR017" H 1250 7100 50  0001 C CNN
@@ -836,7 +826,7 @@ $EndComp
 Text Notes 1150 7450 1    60   ~ 0
 At U1
 $Comp
-L GND #PWR018
+L funcoid1-rescue:GND #PWR018
 U 1 1 5AAFEE5E
 P 1700 7450
 F 0 "#PWR018" H 1700 7200 50  0001 C CNN
@@ -847,7 +837,7 @@ F 3 "" H 1700 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C4
+L funcoid1-rescue:C_Small C4
 U 1 1 5AAFEE64
 P 1700 7350
 F 0 "C4" H 1710 7420 50  0000 L CNN
@@ -858,7 +848,7 @@ F 3 "" H 1700 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR019
+L funcoid1-rescue:VCC #PWR019
 U 1 1 5AAFEE6A
 P 1700 7250
 F 0 "#PWR019" H 1700 7100 50  0001 C CNN
@@ -871,7 +861,7 @@ $EndComp
 Text Notes 1600 7450 1    60   ~ 0
 At U2
 $Comp
-L GND #PWR020
+L funcoid1-rescue:GND #PWR020
 U 1 1 5AAFEEED
 P 2150 7450
 F 0 "#PWR020" H 2150 7200 50  0001 C CNN
@@ -882,7 +872,7 @@ F 3 "" H 2150 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C5
+L funcoid1-rescue:C_Small C5
 U 1 1 5AAFEEF3
 P 2150 7350
 F 0 "C5" H 2160 7420 50  0000 L CNN
@@ -893,7 +883,7 @@ F 3 "" H 2150 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR021
+L funcoid1-rescue:VCC #PWR021
 U 1 1 5AAFEEF9
 P 2150 7250
 F 0 "#PWR021" H 2150 7100 50  0001 C CNN
@@ -906,7 +896,7 @@ $EndComp
 Text Notes 2050 7450 1    60   ~ 0
 At U3
 $Comp
-L GND #PWR022
+L funcoid1-rescue:GND #PWR022
 U 1 1 5AAFF2A6
 P 2600 7450
 F 0 "#PWR022" H 2600 7200 50  0001 C CNN
@@ -917,7 +907,7 @@ F 3 "" H 2600 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C6
+L funcoid1-rescue:C_Small C6
 U 1 1 5AAFF2AC
 P 2600 7350
 F 0 "C6" H 2610 7420 50  0000 L CNN
@@ -928,7 +918,7 @@ F 3 "" H 2600 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR023
+L funcoid1-rescue:VCC #PWR023
 U 1 1 5AAFF2B2
 P 2600 7250
 F 0 "#PWR023" H 2600 7100 50  0001 C CNN
@@ -941,7 +931,7 @@ $EndComp
 Text Notes 2500 7450 1    60   ~ 0
 At U4
 $Comp
-L GND #PWR024
+L funcoid1-rescue:GND #PWR024
 U 1 1 5AAFF33B
 P 3050 7450
 F 0 "#PWR024" H 3050 7200 50  0001 C CNN
@@ -952,7 +942,7 @@ F 3 "" H 3050 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C7
+L funcoid1-rescue:C_Small C7
 U 1 1 5AAFF341
 P 3050 7350
 F 0 "C7" H 3060 7420 50  0000 L CNN
@@ -963,7 +953,7 @@ F 3 "" H 3050 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR025
+L funcoid1-rescue:VCC #PWR025
 U 1 1 5AAFF347
 P 3050 7250
 F 0 "#PWR025" H 3050 7100 50  0001 C CNN
@@ -976,7 +966,7 @@ $EndComp
 Text Notes 2950 7450 1    60   ~ 0
 At U5
 $Comp
-L Conn_02x20_Odd_Even J4
+L funcoid1-rescue:Conn_02x20_Odd_Even J4
 U 1 1 5AD19BF3
 P 10350 2550
 F 0 "J4" H 10400 3550 50  0000 C CNN
@@ -1103,7 +1093,7 @@ EXT_IRQ
 NoConn ~ 10650 1850
 NoConn ~ 10650 2150
 $Comp
-L DB9_Male J5
+L funcoid1-rescue:DB9_Male J5
 U 1 1 5B539C1D
 P 10400 5250
 F 0 "J5" H 10400 5800 50  0000 C CNN
@@ -1114,7 +1104,7 @@ F 3 "" H 10400 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR026
+L funcoid1-rescue:GND #PWR026
 U 1 1 5B53BAE3
 P 10100 4850
 F 0 "#PWR026" H 10100 4600 50  0001 C CNN
@@ -1176,7 +1166,7 @@ SYNC
 Text GLabel 4800 1850 0    60   Output ~ 0
 ~ML
 $Comp
-L R R7
+L funcoid1-rescue:R R7
 U 1 1 5B5AAFF8
 P 6900 1750
 F 0 "R7" V 6980 1750 50  0000 C CNN
@@ -1200,7 +1190,7 @@ Text GLabel 10650 2250 2    60   Input ~ 0
 ~VP
 NoConn ~ 10650 2750
 $Comp
-L VCC #PWR027
+L funcoid1-rescue:VCC #PWR027
 U 1 1 5B5B3757
 P 10750 1550
 F 0 "#PWR027" H 10750 1400 50  0001 C CNN
@@ -1211,7 +1201,7 @@ F 3 "" H 10750 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR028
+L funcoid1-rescue:GND #PWR028
 U 1 1 5B5B37E6
 P 11050 1750
 F 0 "#PWR028" H 11050 1500 50  0001 C CNN
@@ -1222,7 +1212,7 @@ F 3 "" H 11050 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x02_Male J2
+L funcoid1-rescue:Conn_01x02_Male J2
 U 1 1 5B5C51B7
 P 4500 6850
 F 0 "J2" V 4550 6950 50  0000 C CNN
@@ -1237,7 +1227,7 @@ EXT_NMI
 Text GLabel 4600 7300 2    60   Output ~ 0
 NMI
 $Comp
-L R R5
+L funcoid1-rescue:R R5
 U 1 1 5B5C8152
 P 4250 1300
 F 0 "R5" V 4330 1300 50  0000 C CNN
@@ -1248,7 +1238,7 @@ F 3 "" H 4250 1300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R4
+L funcoid1-rescue:R R4
 U 1 1 5B5C81EA
 P 4050 1300
 F 0 "R4" V 4130 1300 50  0000 C CNN
@@ -1259,7 +1249,7 @@ F 3 "" H 4050 1300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L VCC #PWR029
+L funcoid1-rescue:VCC #PWR029
 U 1 1 5AAF0111
 P 3850 1000
 F 0 "#PWR029" H 3850 850 50  0001 C CNN
@@ -1270,7 +1260,7 @@ F 3 "" H 3850 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x04_Male J3
+L funcoid1-rescue:Conn_01x04_Male J3
 U 1 1 5B5CBFF2
 P 5850 6850
 F 0 "J3" V 5900 7050 50  0000 C CNN
@@ -1287,7 +1277,7 @@ IRQ
 Text GLabel 5550 7300 0    60   Input ~ 0
 S1_IRQ
 $Comp
-L Barrel_Jack J1
+L funcoid1-rescue:Barrel_Jack J1
 U 1 1 5B5D1B9A
 P 800 1050
 F 0 "J1" H 800 1260 50  0000 C CNN
@@ -1298,7 +1288,7 @@ F 3 "" H 850 1010 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR030
+L funcoid1-rescue:VCC #PWR030
 U 1 1 5B5D2333
 P 3150 850
 F 0 "#PWR030" H 3150 700 50  0001 C CNN
@@ -1317,7 +1307,7 @@ Text Notes 10700 7650 2    60   ~ 0
 Text Notes 8750 6750 0    60   ~ 0
 I/O memory map\n S1 (serial) | $6000-$6003
 $Comp
-L 74LS132 U1
+L funcoid1-rescue:74LS132 U1
 U 5 1 5B5D791D
 P 2500 2650
 F 0 "U1" H 2350 3000 50  0000 C CNN
@@ -1328,7 +1318,7 @@ F 3 "" H 2500 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR031
+L funcoid1-rescue:VCC #PWR031
 U 1 1 5B5D8002
 P 2500 2150
 F 0 "#PWR031" H 2500 2000 50  0001 C CNN
@@ -1339,7 +1329,7 @@ F 3 "" H 2500 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR032
+L funcoid1-rescue:GND #PWR032
 U 1 1 5B5D8070
 P 2500 3150
 F 0 "#PWR032" H 2500 2900 50  0001 C CNN
@@ -1350,7 +1340,7 @@ F 3 "" H 2500 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM1117-5.0 U6
+L funcoid1-rescue:LM1117-5.0 U6
 U 1 1 5BA42075
 P 2400 950
 F 0 "U6" H 2250 1075 50  0000 C CNN
@@ -1361,7 +1351,7 @@ F 3 "" H 2400 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1_Small C9
+L funcoid1-rescue:CP1_Small C9
 U 1 1 5BA421E8
 P 2000 1150
 F 0 "C9" H 2010 1220 50  0000 L CNN
@@ -1372,7 +1362,7 @@ F 3 "" H 2000 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1_Small C10
+L funcoid1-rescue:CP1_Small C10
 U 1 1 5BA426F8
 P 2800 1150
 F 0 "C10" H 2810 1220 50  0000 L CNN
@@ -1383,7 +1373,7 @@ F 3 "" H 2800 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR033
+L funcoid1-rescue:GND #PWR033
 U 1 1 5BA4369A
 P 2400 1400
 F 0 "#PWR033" H 2400 1150 50  0001 C CNN
@@ -1394,7 +1384,7 @@ F 3 "" H 2400 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG034
+L funcoid1-rescue:PWR_FLAG #FLG034
 U 1 1 5AAFBFFF
 P 1850 850
 F 0 "#FLG034" H 1850 925 50  0001 C CNN
@@ -1405,7 +1395,7 @@ F 3 "" H 1850 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG035
+L funcoid1-rescue:PWR_FLAG #FLG035
 U 1 1 5BA46D39
 P 1150 1400
 F 0 "#FLG035" H 1150 1475 50  0001 C CNN
@@ -1416,7 +1406,7 @@ F 3 "" H 1150 1400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L D D2
+L funcoid1-rescue:D D2
 U 1 1 5BA42917
 P 1300 950
 F 0 "D2" H 1300 1050 50  0000 C CNN
@@ -1427,7 +1417,7 @@ F 3 "" H 1300 950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D3
+L funcoid1-rescue:LED D3
 U 1 1 5BA42C77
 P 3150 1150
 F 0 "D3" H 3150 1250 50  0000 C CNN
@@ -1438,7 +1428,7 @@ F 3 "" H 3150 1150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R8
+L funcoid1-rescue:R R8
 U 1 1 5BA44586
 P 3150 1450
 F 0 "R8" V 3230 1450 50  0000 C CNN
@@ -1449,7 +1439,7 @@ F 3 "" H 3150 1450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR036
+L funcoid1-rescue:GND #PWR036
 U 1 1 5BA44A5B
 P 3150 1600
 F 0 "#PWR036" H 3150 1350 50  0001 C CNN
@@ -1460,7 +1450,7 @@ F 3 "" H 3150 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R9
+L funcoid1-rescue:R R9
 U 1 1 5BA627A7
 P 1600 950
 F 0 "R9" V 1680 950 50  0000 C CNN
@@ -1471,7 +1461,7 @@ F 3 "" H 1600 950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2800 1350 1150 1350
+	2800 1350 2400 1350
 Connection ~ 3850 1050
 Connection ~ 3150 950 
 Connection ~ 2000 1350
@@ -1479,20 +1469,20 @@ Wire Wire Line
 	2000 1250 2000 1350
 Connection ~ 2400 1350
 Wire Wire Line
-	2400 1250 2400 1400
+	2400 1250 2400 1350
 Wire Wire Line
 	2800 1250 2800 1350
 Connection ~ 1150 1350
 Wire Wire Line
-	1150 1050 1150 1400
+	1150 1050 1150 1150
 Wire Wire Line
-	3150 850  3150 1000
+	3150 850  3150 950 
 Wire Wire Line
 	2800 950  2800 1050
 Wire Wire Line
-	2700 950  3150 950 
+	2700 950  2800 950 
 Wire Wire Line
-	1750 950  2100 950 
+	1750 950  1850 950 
 Wire Wire Line
 	1100 950  1150 950 
 Connection ~ 1850 950 
@@ -1523,7 +1513,7 @@ Connection ~ 5950 7450
 Wire Wire Line
 	5950 7050 5950 7450
 Wire Wire Line
-	5750 7450 6050 7450
+	5750 7450 5950 7450
 Wire Wire Line
 	5750 7050 5750 7450
 Wire Wire Line
@@ -1541,13 +1531,13 @@ Connection ~ 4050 1050
 Wire Wire Line
 	4050 1150 4050 1050
 Wire Wire Line
-	3850 1000 3850 2150
+	3850 1000 3850 1050
 Wire Wire Line
-	4450 1050 3850 1050
+	4450 1050 4250 1050
 Wire Wire Line
 	4450 1150 4450 1050
 Wire Wire Line
-	6200 1900 7050 1900
+	6200 1900 6900 1900
 Wire Wire Line
 	6200 1850 6200 1900
 Wire Wire Line
@@ -1559,11 +1549,11 @@ Wire Wire Line
 Wire Wire Line
 	6100 1650 6200 1650
 Wire Wire Line
-	3750 1950 4800 1950
+	3750 1950 4050 1950
 Wire Wire Line
-	4800 1750 3750 1750
+	4800 1750 4250 1750
 Wire Wire Line
-	3750 1550 4800 1550
+	3750 1550 4450 1550
 Wire Wire Line
 	3850 2150 4800 2150
 Connection ~ 4450 1550
@@ -1586,7 +1576,7 @@ Wire Wire Line
 Wire Wire Line
 	9900 2650 10150 2650
 Wire Wire Line
-	6300 4800 6150 4800
+	6300 4800 6250 4800
 Wire Wire Line
 	6250 4900 6950 4900
 Wire Wire Line
@@ -1604,22 +1594,16 @@ Wire Wire Line
 	6950 4400 6600 4400
 Wire Bus Line
 	6400 5900 5950 5900
-Wire Bus Line
-	6500 5500 6500 5800
 Wire Wire Line
 	6950 5600 6600 5600
 Wire Wire Line
 	6950 5500 6600 5500
 Wire Bus Line
 	8800 5500 9200 5500
-Wire Bus Line
-	8700 4400 8700 5400
 Wire Wire Line
 	4750 5300 5100 5300
 Wire Bus Line
 	4700 4150 5100 4150
-Wire Bus Line
-	5200 4250 5200 5150
 Wire Wire Line
 	4750 5150 5100 5150
 Wire Wire Line
@@ -1644,8 +1628,6 @@ Wire Bus Line
 	6550 2950 6950 2950
 Wire Bus Line
 	8800 1200 9200 1200
-Wire Bus Line
-	9300 1300 9300 2200
 Wire Wire Line
 	9050 2200 9200 2200
 Wire Wire Line
@@ -1682,12 +1664,6 @@ Wire Wire Line
 	3400 5050 3750 5050
 Wire Wire Line
 	3400 4950 3750 4950
-Wire Bus Line
-	4550 2250 4550 3550
-Wire Bus Line
-	6350 2950 6350 3550
-Wire Bus Line
-	3300 4350 3300 6050
 Wire Wire Line
 	3750 4850 3400 4850
 Wire Wire Line
@@ -1708,9 +1684,7 @@ Wire Wire Line
 Wire Wire Line
 	7650 3200 7550 3200
 Wire Wire Line
-	7450 3300 7650 3300
-Wire Bus Line
-	7400 1400 7400 3100
+	7450 3300 7550 3300
 Wire Wire Line
 	7500 2900 7650 2900
 Wire Wire Line
@@ -1750,12 +1724,12 @@ Wire Wire Line
 Wire Wire Line
 	1050 4000 950  4000
 Wire Wire Line
-	950  3900 950  4100
+	950  3900 950  4000
 Connection ~ 950  4000
 Wire Wire Line
-	1350 4000 1550 4000
+	1350 4000 1450 4000
 Wire Wire Line
-	1450 3900 1450 4100
+	1450 3900 1450 4000
 Wire Wire Line
 	1450 3700 1450 3500
 Wire Wire Line
@@ -1794,8 +1768,6 @@ Wire Wire Line
 	4800 3350 4650 3350
 Wire Wire Line
 	4800 2250 4650 2250
-Wire Bus Line
-	6450 1950 6450 2850
 Wire Wire Line
 	6100 2850 6350 2850
 Wire Wire Line
@@ -1828,8 +1800,6 @@ Wire Wire Line
 	10150 2250 10000 2250
 Wire Wire Line
 	10150 2350 10000 2350
-Wire Bus Line
-	9900 1450 9900 2350
 Wire Wire Line
 	10150 2850 9950 2850
 Wire Wire Line
@@ -1862,10 +1832,6 @@ Wire Wire Line
 	10650 3450 10850 3450
 Wire Wire Line
 	10650 3550 10850 3550
-Wire Bus Line
-	9850 2850 9850 3750
-Wire Bus Line
-	10950 2850 10950 3750
 Wire Bus Line
 	9950 3850 10850 3850
 Wire Bus Line
@@ -1914,4 +1880,72 @@ Wire Wire Line
 	8250 5200 8600 5200
 Wire Wire Line
 	8250 5300 8600 5300
+Wire Wire Line
+	3850 1050 3850 2150
+Wire Wire Line
+	3150 950  3150 1000
+Wire Wire Line
+	2000 1350 1150 1350
+Wire Wire Line
+	2400 1350 2000 1350
+Wire Wire Line
+	2400 1350 2400 1400
+Wire Wire Line
+	1150 1350 1150 1400
+Wire Wire Line
+	1850 950  2000 950 
+Wire Wire Line
+	2800 950  3150 950 
+Wire Wire Line
+	1150 1150 1150 1350
+Wire Wire Line
+	2000 950  2100 950 
+Wire Wire Line
+	6250 4800 6150 4800
+Wire Wire Line
+	6900 1900 7050 1900
+Wire Wire Line
+	5950 7450 6050 7450
+Wire Wire Line
+	4250 1050 4050 1050
+Wire Wire Line
+	4050 1050 3850 1050
+Wire Wire Line
+	4450 1550 4800 1550
+Wire Wire Line
+	4250 1750 3750 1750
+Wire Wire Line
+	4050 1950 4800 1950
+Wire Wire Line
+	1450 4000 1550 4000
+Wire Wire Line
+	1450 4000 1450 4100
+Wire Wire Line
+	7550 3300 7650 3300
+Wire Wire Line
+	950  4000 950  4100
+Wire Bus Line
+	6500 5500 6500 5800
+Wire Bus Line
+	6350 2950 6350 3550
+Wire Bus Line
+	8700 4400 8700 5400
+Wire Bus Line
+	5200 4250 5200 5150
+Wire Bus Line
+	9300 1300 9300 2200
+Wire Bus Line
+	6450 1950 6450 2850
+Wire Bus Line
+	9900 1450 9900 2350
+Wire Bus Line
+	9850 2850 9850 3750
+Wire Bus Line
+	10950 2850 10950 3750
+Wire Bus Line
+	4550 2250 4550 3550
+Wire Bus Line
+	3300 4350 3300 6050
+Wire Bus Line
+	7400 1400 7400 3100
 $EndSCHEMATC

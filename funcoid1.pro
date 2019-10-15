@@ -1,4 +1,4 @@
-update=Sat 22 Sep 2018 02:55:09 PM CEST
+update=Tue 15 Oct 2019 10:35:36 PM CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -37,14 +37,4 @@ SpiceUseNetNumbers=0
 LabSize=60
 [eeschema]
 version=1
-LibDir=/home/alvin/lib/kicad/kicad-library/library
-[eeschema/libraries]
-LibName1=device
-LibName2=power
-LibName3=memory
-LibName4=Switch
-LibName5=Logic_74xx
-LibName6=Oscillators
-LibName7=65xx
-LibName8=Connector
-LibName9=regul
+LibDir=
